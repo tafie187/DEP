@@ -1,20 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Discount Eligibility Program</title>
-<link rel="stylesheet" href="DEP.css">
-</head>
-<body>
-<form action="">
-    <p>Please select you age</p>
-<input type="number" id="ageNum"><br>
-<input type="checkbox">   Are you a Member <br>
-<button>Check Eligibility</button>
-<label for="output">output</label>
-<output id="output"></output> 
-</form>
-</body>
-</html>
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Discount Eligibility Program</title>
+
+                <!-- Linking External CSS File -->
+                <link rel="stylesheet" href="DEP.css">
+                
+                <!-- Linking JavaScript file  -->
+                <script src="DEP.js"></script>                
+            
+            </head>
+                <body>
+                    <div class="Container">
+                        <div class="content">
+                            <Fieldset>
+                                <form action="">
+                                    <h1>Please Select Your Age</h1>
+                                        <input type="number" id="age" name="age"><br><br>
+                                        <input type="checkbox"id="member" name="member">   Are you a Member <br><br>
+                                        <button onclick="checkElegibility()">Check Eligibility</button><br><br>
+                                        <label for="output">Results:</label>
+                                        <output id="output"></output>
+                                </form>
+                            </Fieldset> 
+                        </div>
+                    </div>
+            
+                </body>
+            </html>
