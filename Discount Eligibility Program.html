@@ -1,36 +1,37 @@
-            <!DOCTYPE html>
-            <html lang="en">
-                <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Discount Eligibility Program</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Eligibility Program</title>
 
-                <!-- Linking External CSS File -->
-                <link rel="stylesheet" href="DEP.css">
-                
-                <!-- Linking JavaScript file  -->
-                <script src="DEP.js"></script>                
-            
-            </head>
-                <body>
-                    <div class="Container">
-                        <div class="content">
-                            <Fieldset class="design">
-                                <form id="form">
-                                        <h1>Discount Eligibility Program</h1>
-                                        <label for="age">Please Select Your Age:</label>
-                                        <input type="number" id="age" name="age"><br><br>
-                                        <input type="checkbox"id="myCheckBox" name="member" onclick="checkElegibility()">   Are you a Member <br><br>
-                                        <button onclick="checkElegibility()">Check Eligibility</button><br><br>
-                                        <p id="output"></p>
-                                        <!-- <label for="output">Results:</label> -->
-                                        <!-- <output id="output"></output> -->
-                                </form>
-                                
-                            </Fieldset> 
-                        </div>
-                    </div>
-            
-                </body>
-            </html>
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="DEP.css">
+
+    <!-- Linking JavaScript file -->
+    <script src="DEP.js"></script>
+  </head>
+  <body>
+    <div class="Container">
+      <div class="content">
+        <fieldset class="design">
+          <form id="form">
+            <h1>Discount Eligibility Program</h1>
+            <label for="age">Please Select Your Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+            <input type="checkbox" id="myCheckbox" name="member"> Are you a Member <br><br>
+            <!-- the checkbox was not correct used a capital here and not in javascript -->
+            <button onclick="checkEligibility()">Check Eligibility</button><br><br>
+            <label for="output">Results:</label>
+            <!-- a label for input was needed to display the result -->
+            <p id="output"></p>
+           
+          </form>
+        </fieldset> 
+      </div>
+    </div>
+
+    <script src="DEP.js"></script>
+  </body>
+</html>
